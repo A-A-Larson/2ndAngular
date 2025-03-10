@@ -1,0 +1,11 @@
+{
+    "/api/v1/plants**": {
+      "target": "https://trefle.io",
+      "secure": true,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api/v1/plants": "/api/v1/plants?token=X-W0L2jeV5xjee9X4ucM2HmTt2WiiFN58IkeMXGJ40E"
+      }
+    }
+}

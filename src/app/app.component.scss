@@ -1,0 +1,24 @@
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+
+.plantCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.cardImg {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
