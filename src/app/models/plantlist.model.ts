@@ -2,7 +2,7 @@ export class PlantList {
     
     data: [
         {            
-            id: number | null,
+            id?: number | null,
             common_name: string | null,
             slug: string | null,
             scientific_name: string | null,
@@ -15,7 +15,7 @@ export class PlantList {
             family: string | null,
             genus: string | null,
             genus_id: number | null,
-            image_url: string | null,
+            image_url: string,
             links: {
                 genus: string | null,
                 plant: string | null,
@@ -46,7 +46,7 @@ export class PlantList {
                 family_common_name: string | null,
                 genus: string | null,
                 genus_id: number | null,
-                image_url: string | null,
+                image_url: string,
                 id: number | null,
                 links: {
                     genus: string | null,

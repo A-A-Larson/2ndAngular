@@ -1,4 +1,4 @@
-import { environment } from '../../environments/environment.development';
+import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import {  BehaviorSubject, switchMap } from 'rxjs';
@@ -11,7 +11,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 
 export class ApiService {
 
-    private baseUrl: string = '/api/v1/plants';
+    private baseUrl: string = `${environment.apiUrl}/plants`; // Uses apiUrl from environment
     private key: string = `?token=${environment.key}`;
     private payload: string = '';
     private http = inject(HttpClient);
@@ -69,7 +69,7 @@ export class ApiService {
     };
 
     data$ = this.refresh$.pipe(
-        switchMap(() => this.http.get<PlantList>(`${this.baseUrl}${this.payload}`)));
+        switchMap(() => this.http.get<PlantList>(`${this.baseUrl}${this.key}${this.payload}`))); // now uses full API URL
     
     data = toSignal(this.data$, { initialValue: this.plantList as PlantList });
 
