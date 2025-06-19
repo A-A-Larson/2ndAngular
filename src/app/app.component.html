@@ -12,7 +12,7 @@
   <!-- <pre>{{ apiService.data() | json }}</pre> -->
   <div class="cardContainer" >
     <div class="plantCard" *ngFor="let plant of apiService.data().data; index as i;">
-      <img class="cardImg" ngSrc={{plant.image_url}} alt="plant picture" width="200" height="200" priority>
+      <img class="cardImg" [ngSrc]="plant.image_url" alt="plant picture" width="200" height="200">
       <div>{{plant.common_name}}</div>
     </div>
   </div>

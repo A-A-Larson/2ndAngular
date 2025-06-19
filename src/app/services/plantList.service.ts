@@ -31,7 +31,7 @@ export class ApiService {
             family: null,
             genus: null,
             genus_id: null,
-            image_url: null,
+            image_url: '',
             links: {
                 genus: null,
                 plant: null,
