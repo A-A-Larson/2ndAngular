@@ -1,0 +1,17 @@
+
+<button (click)="nextPage()">Next Page</button>
+<app-search (filter)="onFilter($event)"></app-search>
+
+<div *ngIf="!plantListService.plantListServiceSignal()">  
+  <p>Loading data...</p>
+</div>
+
+<div *ngIf="plantListService.plantListServiceSignal()">  
+  <h2>Data from API</h2>  
+  <div class="cardContainer" >
+    <div class="plantCard" *ngFor="let plant of filteredPlantList; index as i;">
+      <img class="cardImg" [ngSrc]="plant.image_url || 'assets/img/Untitled_Tree.jpg'" alt="plant picture" width="200" height="200">
+      <div>{{plant.common_name}}</div>
+    </div>
+  </div>
+</div>

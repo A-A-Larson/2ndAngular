@@ -1,20 +1,3 @@
-
-<button (click)="nextPage()">Next Page</button>
-
-
-<div *ngIf="!plantListService.plantListServiceSignal()">  
-  <p>Loading data...</p>
+<div class="container">
+  <app-home></app-home>
 </div>
-
-
-<div *ngIf="plantListService.plantListServiceSignal()">  
-  <h2>Data from API</h2>  
-  <!-- <pre>{{ plantListService.data() | json }}</pre> -->
-  <div class="cardContainer" >
-    <div class="plantCard" *ngFor="let plant of plantListService.plantListServiceSignal().data; index as i;">
-      <img class="cardImg" [ngSrc]="plant.image_url || 'assets/img/Untitled_Tree.jpg'" alt="plant picture" width="200" height="200">
-      <div>{{plant.common_name}}</div>
-    </div>
-  </div>
-</div>
-

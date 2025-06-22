@@ -1,32 +1,17 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { plantListService } from './services/plantList.service';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { Component, } from '@angular/core';
+import { CommonModule, } from '@angular/common';
+import { HomeComponent } from './pages/home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage,],
+  imports: [HomeComponent, CommonModule,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   
-  title = '2ndAngular';  
-  plantListService = inject(plantListService);
-
-  ngOnInit() {
-    // this.plantList = this.plantListService.data();
-    // console.log("This plantlist on load: ", this.plantList)
-  }
-
-  nextPage(): void {
-    this.plantListService.setPayload(
-      this.plantListService.formatPayload(this.plantListService.plantListServiceSignal().links.next)
-    );
-    this.plantListService.refreshData();
-    // this.plantList = this.plantListService.data();
-    // console.log("This plant list after next page: ", this.plantList);
-  };
+  
 
 };
