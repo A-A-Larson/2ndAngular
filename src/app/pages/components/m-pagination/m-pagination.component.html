@@ -1,0 +1,7 @@
+<div class="pagination">
+  <button (click)="goTo(links?.self)" [disabled]="!links?.self">Self</button>
+  <button (click)="goTo(links?.first)" [disabled]="!links?.first">First</button>  
+  <button (click)="goTo(links?.next)" [disabled]="!links?.next">Next</button>
+  <button (click)="goTo(links?.prev)" [disabled]="!links?.prev">Previous</button>
+  <button (click)="goTo(links?.last)" [disabled]="!links?.last">Last</button>
+</div>

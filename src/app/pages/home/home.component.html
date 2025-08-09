@@ -1,6 +1,10 @@
 
-<button (click)="nextPage()">Next Page</button>
-<app-search (filter)="onFilter($event)"></app-search>
+<!-- <button (click)="nextPage()">Next Page</button>
+<app-search (filter)="onFilter($event)"></app-search> -->
+<app-m-pagination
+  [links]="plantListService.plantListServiceSignal()?.links ?? null"
+  (pageChange)="onPageChange($event)">
+</app-m-pagination>
 
 <div *ngIf="!plantListService.plantListServiceSignal()">  
   <p>Loading data...</p>

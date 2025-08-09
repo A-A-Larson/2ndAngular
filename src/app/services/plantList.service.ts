@@ -31,36 +31,37 @@ export class plantListService {
     private payload: string = '';
     private http = inject(HttpClient);
     private refresh$ = new BehaviorSubject<void>(undefined); // To manage data refreshes, the service uses a private BehaviorSubject called refresh$. This subject emits a value whenever data should be re-fetched from the API.
-    private plantList: PlantList = {data: [
+    private plantList: PlantList = {
+        data: [
         {            
-            id: null,
+            id: 0,
             common_name: null,
-            slug: null,
-            scientific_name: null,
+            slug: '',
+            scientific_name: '',
             year: null,
             bibliography: null,
             author: null,
-            status: null,
-            rank: null,
+            status: '',
+            rank: '',
             family_common_name: null,
-            family: null,
-            genus: null,
-            genus_id: null,
+            family: '',
+            genus_id: 0,
+            genus: '',            
             image_url: '',
             links: {
-                genus: null,
-                plant: null,
-                self: null
-            },
-            plant_id: null,
-            synonyms: [],
+                self: '',
+                genus: '',
+                plant: '',
+            },            
+            synonyms: null,
         },        
     ],
     links: {
+        self: '',
         first: '',
-        last: '',
         next: '',
-        self: ''
+        prev: '',
+        last: '',
     },
     meta: {
         total: 0
