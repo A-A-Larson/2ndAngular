@@ -10,6 +10,15 @@ This project was created to be used as a sandbox to practice Angular framework t
 
 <img width="1684" height="1172" alt="image" src="https://github.com/user-attachments/assets/ed62e3bd-08a7-40dc-a2b0-0ba30bd1efd0" />
 
+## Environment Setup
+
+Copy the template files and add your API key:
+
+1. Copy `src/environments/environment.template.ts` to:
+   - `src/environments/environment.ts`
+   - `src/environments/environment.development.ts`
+   - `src/environments/environment.prod.ts`
+2. Add your Trefle API key to each environment file
 
 ## Development server
 
