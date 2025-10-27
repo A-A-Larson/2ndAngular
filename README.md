@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
+## Project Details
+
+This project was created to be used as a sandbox to practice Angular framework tools and libraries and to get familiar with common design patterns and architecture. It uses the https://trefle.io/ public API. 
+
+## Screenshots
+
+<img width="1684" height="1172" alt="image" src="https://github.com/user-attachments/assets/ed62e3bd-08a7-40dc-a2b0-0ba30bd1efd0" />
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
