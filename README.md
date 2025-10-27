@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Project Details
 
-This project was created to be used as a sandbox to practice Angular framework tools and libraries and to get familiar with common design patterns and architecture. It uses the https://trefle.io/ public API. 
+This project was created to be used as a sandbox to practice Angular framework tools and libraries and to get familiar with common design patterns and architecture. So far I have used it to get familiar with Angular observables, subscriptions and signals. I also got experience setting up environment variables to hide an API key, basic project structure, creating a service file for API calls and setting up a proxy server for development. It uses the https://trefle.io/ public API. 
 
 ## Screenshots
 
