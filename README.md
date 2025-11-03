@@ -1,7 +1,5 @@
 # 2ndAngular
 
-This project was generated with Angular CLI version 17.3.11.
-
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/ed62e3bd-08a7-40dc-a2b0-0ba30bd1efd0)
