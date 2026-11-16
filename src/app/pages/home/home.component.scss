@@ -1,24 +1,68 @@
+.section-title {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
 .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
 .plantCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;font-size: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 15px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(20, 50, 30, 0.12), 0 16px 32px rgba(20, 50, 30, 0.14);
+  }
+}
+
+.imgWrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #e6f2e8;
 }
 
 .cardImg {
-    object-fit: cover;
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+
+  .plantCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.cardBody {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.plantName {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.sciName {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
 }
