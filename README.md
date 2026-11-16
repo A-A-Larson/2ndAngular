@@ -2,7 +2,7 @@
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/ed62e3bd-08a7-40dc-a2b0-0ba30bd1efd0)
+<img width="1800" height="1350" alt="Screenshot 2026-11-16 at 13-45-16 2ndAngular" src="https://github.com/user-attachments/assets/b02efe72-a5ef-4e4f-82ad-a501c14048d1" />
 
 ## Project Details
 
